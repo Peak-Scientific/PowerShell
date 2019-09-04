@@ -1,0 +1,2 @@
+﻿
+$cred = get-credential
