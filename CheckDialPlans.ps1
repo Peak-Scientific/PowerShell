@@ -7,3 +7,6 @@ Get-CsEffectiveTenantDialPlan -Identity emuellers@peakscientific.com
 Get-CsEffectiveTenantDialPlan -Identity emuellers@peakscientific.com | Test-CsEffectiveTenantDialPlan -DialedNumber 016091565900
 
 Get-CsTenantDialPlan  -Identity GermanyDP
+Get-CsTenantDialPlan  -Identity USADialPlan
+
+Grant-cstenantdialplan -policyname GermanyDP -identity $user
